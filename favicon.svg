@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="ARKHA">
+  <rect width="512" height="512" rx="112.64" ry="112.64" fill="#0F1113"/>
+  
+  <path fill="#F2F1EE" fill-rule="evenodd"
+        transform="matrix(0.140400 0 0 -0.140400 95.8720 371.2000)"
+        d="M64 0 960 1536H1216L2112 0H1888L1696 352H480L288 0ZM576 512H1600L1088 1408Z"/>
+  <circle cx="369.39" cy="181.42" r="28.16" fill="#D4B483"/>
+</svg>
