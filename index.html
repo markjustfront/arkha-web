@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ARKHA POS · TPV para restaurantes</title>
-<meta name="description" content="ARKHA POS: TPV para restaurantes hecho en Cataluña. Plano de sala, comandas a cocina y barra, reservas online, carta QR y facturación preparada para Verifactu.">
+<meta name="description" content="ARKHA POS: TPV para restaurantes hecho en Cataluña, en español, catalán e inglés. Plano de sala, comandas, fichaje, reservas online, carta QR y facturación preparada para Verifactu (en desarrollo).">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0F1113">
 <link rel="canonical" href="https://arkha.eu/">
 <meta property="og:type" content="website"><meta property="og:url" content="https://arkha.eu/">
-<meta property="og:title" content="ARKHA POS · TPV para restaurantes"><meta property="og:description" content="TPV para restaurantes hecho en Cataluña. Sala, cocina, reservas y carta QR en un solo sistema.">
+<meta property="og:title" content="ARKHA POS · TPV para restaurantes"><meta property="og:description" content="TPV para restaurantes hecho en Cataluña, en español, catalán e inglés. Sala, cocina, fichaje, reservas y carta QR en un solo sistema.">
 <meta property="og:image" content="https://arkha.eu/assets/img/og.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">
@@ -20,7 +20,7 @@
 <a class="skip" href="#main" data-i="skip">Saltar al contenido</a>
 <header class="top">
  <div class="wrap nav">
-  <a href="#" class="brand" aria-label="ARKHA POS"><span class="wm" role="img" aria-label="ARKHA"></span></a>
+  <a href="./" class="brand" aria-label="ARKHA POS"><span class="wm" role="img" aria-label="ARKHA"></span></a>
   <nav aria-label="Principal"><ul>
    <li><a href="#funciones" data-i="n1">Funciones</a></li>
    <li><a href="#como" data-i="n2">Cómo funciona</a></li>
@@ -28,9 +28,9 @@
    <li><a href="#contacto" data-i="n4">Contacto</a></li></ul></nav>
   <div class="tools">
    <div class="lang" role="group" aria-label="Idioma / Language">
-    <button data-lang="es" aria-pressed="true">ES</button><button data-lang="ca" aria-pressed="false">CA</button><button data-lang="en" aria-pressed="false">EN</button>
+    <button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="ca" aria-pressed="false">CA</button><button type="button" data-lang="en" aria-pressed="false">EN</button>
    </div>
-   <button id="theme" class="icon" aria-label="Cambiar tema claro/oscuro" data-ia="theme">◐</button>
+   <button type="button" id="theme" class="icon" aria-label="Cambiar tema claro/oscuro" data-ia="theme">◐</button>
   </div>
  </div>
 </header>
@@ -38,9 +38,12 @@
 <section class="hero wrap">
  <p class="eyebrow" data-i="eyebrow">TPV para restaurantes</p>
  <h1 data-i="h1">El TPV de tu restaurante, de la sala a la cocina.</h1>
- <p class="lead" data-i="lead">ARKHA POS reúne mesas, comandas, cuentas, reservas online y carta QR en un sistema sencillo, en español, que funciona en un pequeño dispositivo dentro de tu local. Hecho en Cataluña.</p>
+ <p class="lead" data-i="lead">ARKHA POS reúne mesas, comandas, cuentas, reservas online y carta QR en un sistema sencillo, disponible en español, catalán e inglés, que funciona en un pequeño dispositivo dentro de tu local. Hecho en Cataluña.</p>
  <p class="ctas"><a class="btn" href="#contacto" data-i="cta">Pide una demo</a> <a class="btn ghost" href="#funciones" data-i="cta2">Ver funciones</a></p>
- <figure class="hero-shot"><img src="assets/img/floor.webp" width="1280" height="800" alt="Plano de sala de ARKHA POS con secciones Sala, Terraza, Barra y Privado (datos de demostración)" data-ia="altFloor" fetchpriority="high"></figure>
+ <figure class="hero-shot">
+  <img class="shot-dark" src="assets/img/floor.webp" width="1280" height="800" alt="Plano de sala de ARKHA POS con secciones Sala, Terraza, Barra y Privado (datos de demostración)" data-ia="altFloor" fetchpriority="high">
+  <img class="shot-light" src="assets/img/floor-light.webp" width="1280" height="800" alt="Plano de sala de ARKHA POS en tema claro (datos de demostración)" data-ia="altFloorLight">
+ </figure>
 </section>
 
 <section id="funciones" class="wrap sec">
@@ -48,13 +51,20 @@
  <ul class="grid">
   <li><h3 data-i="f1t">Plano de sala</h3><p data-i="f1">Diseña tu sala por secciones (sala, terraza, barra…), ve el estado de cada mesa de un vistazo y une mesas cuando llega un grupo.</p></li>
   <li><h3 data-i="f2t">Comandas a cocina y barra</h3><p data-i="f2">Los pedidos llegan a la pantalla de cocina o de barra con temporizadores, para que nada se quede esperando.</p></li>
+  <li><h3 data-i="fWt">App del camarero</h3><p data-i="fW">Los camareros toman comandas desde el móvil, en tiempo real con la caja y la cocina.</p></li>
   <li><h3 data-i="f3t">Cuentas por día</h3><p data-i="f3">Historial de cuentas cobradas agrupado por día, con filtros por periodo y forma de pago, y búsqueda.</p></li>
-  <li><h3 data-i="f4t">Preparado para Verifactu</h3><p data-i="f4">Facturación diseñada desde el inicio para Verifactu (registros encadenados y QR en el ticket). Actualmente en modo pruebas.</p></li>
-  <li><h3 data-i="f5t">Reservas online</h3><p data-i="f5">Tus clientes reservan desde la web con disponibilidad real de mesas, y ARKHA asigna la mesa automáticamente.</p></li>
-  <li><h3 data-i="f6t">Carta QR</h3><p data-i="f6">Carta digital para el móvil del cliente, con varios temas visuales para elegir (en desarrollo) y alérgenos en cada plato.</p></li>
+  <li><h3 data-i="fZt">Propinas y cierre de caja</h3><p data-i="fZ">Registras las propinas al cobrar (y también después) y cierras el día con el recuento de caja y el informe Z.</p></li>
+  <li><h3 data-i="fCt">Fichaje en el móvil</h3><p data-i="fC">El personal ficha la entrada y la salida desde el móvil. Si el fichaje es fuera de horario, se pide un motivo. Cada trabajador ve sus propias horas y puede descargar el PDF del mes; el encargado exporta el PDF de cada persona o de todo el personal. Los registros se conservan 4 años. Esta función está diseñada para satisfacer la norma del registro de jornada (RDL 8/2019).</p></li>
+  <li><h3 data-i="fGt">Exportación para la gestoría</h3><p data-i="fG">Cada mes (o un periodo a tu elección) descargas un CSV y un PDF con las ventas por día, el IVA por tipo, las formas de pago, las propinas, las facturas, las devoluciones y los cierres de caja.</p></li>
+  <li><h3 data-i="f5t">Reservas online</h3><p data-i="f5">Tus clientes reservan desde la web con disponibilidad real de mesas, y ARKHA asigna la mesa automáticamente. Si añaden notas de alergia, aparece una casilla de consentimiento explícito, desmarcada por defecto, con un enlace al aviso de privacidad: esas notas son datos de salud según el RGPD.</p></li>
+  <li><h3 data-i="f6t">Carta QR</h3><p data-i="f6">Carta digital para el móvil del cliente, con varios temas visuales para elegir y alérgenos en cada plato.</p></li>
+  <li><h3 data-i="fPt">Personalización de tu restaurante</h3><p data-i="fP">Pones el nombre y el logo de tu restaurante, eliges el aspecto de la carta QR (temas, colores y tipografías) y el de la página de reservas, que puede seguir el mismo estilo.</p></li>
   <li><h3 data-i="f7t">Ficha de alérgenos</h3><p data-i="f7">Tabla de los 14 alérgenos generada a partir de tus productos, lista para imprimir o consultar.</p></li>
   <li><h3 data-i="f8t">Acceso del personal con PIN</h3><p data-i="f8">Cada persona entra con su PIN y su foto de perfil. Rápido en el servicio, claro en la actividad.</p></li>
-  <li><h3 data-i="f9t">Modo claro y oscuro</h3><p data-i="f9">Interfaz en español sencillo, con tema claro, oscuro o automático según la luz del local.</p></li>
+  <li><h3 data-i="f9t">Modo claro y oscuro</h3><p data-i="f9">Interfaz en español, catalán e inglés, con tema claro, oscuro o automático según la luz del local.</p></li>
+  <li><h3 data-i="f4t">Preparado para Verifactu, en desarrollo</h3><p data-i="f4">Facturación con registros encadenados y código QR en el ticket, pensada para Verifactu. Esta función sigue en desarrollo y se ofrece en modo de pruebas. No está certificada.</p></li>
+  <li><h3 data-i="fDt">Copia en Google Drive</h3><p data-i="fD">La copia de seguridad cifrada en Google Drive viene activada por defecto en las instalaciones nuevas. El dueño conecta su cuenta una vez; hasta entonces las copias se quedan en el dispositivo del local.</p></li>
+  <li><h3 data-i="fSt">Soporte remoto y actualizaciones</h3><p data-i="fS">El personal abre tickets de soporte desde el propio TPV y el sistema puede recibir actualizaciones automáticas desde ARKHA Cloud, en una ventana de mantenimiento y con copia de seguridad y vuelta atrás si algo falla. El dispositivo del local sigue funcionando aunque no haya internet.</p></li>
  </ul>
 </section>
 
@@ -63,7 +73,7 @@
  <ol class="steps">
   <li><span>01</span><h3 data-i="s1t">Un dispositivo en tu local</h3><p data-i="s1">ARKHA corre en un pequeño equipo local (tipo Raspberry Pi). La sala sigue funcionando aunque falle internet.</p></li>
   <li><span>02</span><h3 data-i="s2t">Caja, móvil y cocina</h3><p data-i="s2">Caja en el ordenador o tablet, camareros desde el móvil y pantalla en cocina y barra, sincronizados en tiempo real.</p></li>
-  <li><span>03</span><h3 data-i="s3t">Copia en la nube</h3><p data-i="s3">Tus datos se guardan con copia de seguridad en la nube para que no pierdas nada.</p></li>
+  <li><span>03</span><h3 data-i="s3t">Copia de seguridad y nube</h3><p data-i="s3">Tus datos se guardan en el dispositivo del local, con copia cifrada en Google Drive cuando la conectas. El TPV sigue funcionando sin internet; el soporte y las actualizaciones llegan desde ARKHA Cloud cuando hay conexión.</p></li>
  </ol>
 </section>
 
@@ -71,17 +81,20 @@
  <h2 data-i="cH">Capturas</h2>
  <p class="note" data-i="cN">Todas las capturas usan datos de demostración.</p>
  <div class="shots">
-  <figure class="wide"><img src="assets/img/kitchen.webp" width="1280" height="720" loading="lazy" alt="Pantalla de cocina con comandas y temporizadores" data-ia="altKitchen"><figcaption data-i="capK">Pantalla de cocina</figcaption></figure>
-  <figure><img src="assets/img/menu.webp" width="480" height="923" loading="lazy" alt="Carta QR en el móvil con alérgenos" data-ia="altMenu"><figcaption data-i="capM">Carta QR</figcaption></figure>
-  <figure><img src="assets/img/booking.webp" width="480" height="1015" loading="lazy" alt="Formulario de reserva online con horas disponibles" data-ia="altBook"><figcaption data-i="capB">Reservas online</figcaption></figure>
-  <figure class="wide"><img src="assets/img/allergens.webp" width="1280" height="513" loading="lazy" alt="Ficha de alérgenos imprimible" data-ia="altAll"><figcaption data-i="capA">Ficha de alérgenos</figcaption></figure>
+  <figure class="wide"><img src="assets/img/kitchen.webp" width="1280" height="720" loading="lazy" alt="Pantalla de cocina con comandas y temporizadores (datos de demostración)" data-ia="altKitchen"><figcaption data-i="capK">Pantalla de cocina</figcaption></figure>
+  <figure><img src="assets/img/waiter.webp" width="390" height="844" loading="lazy" alt="Vista de camarero en el móvil con mesas y comanda (datos de demostración)" data-ia="altWaiter"><figcaption data-i="capW">App del camarero</figcaption></figure>
+  <figure><img src="assets/img/clockin.webp" width="390" height="844" loading="lazy" alt="Fichaje en el móvil: reloj, PIN y botón para fichar (datos de demostración)" data-ia="altClock"><figcaption data-i="capC">Fichaje en el móvil</figcaption></figure>
+  <figure><img src="assets/img/menu.webp" width="390" height="844" loading="lazy" alt="Carta QR en el móvil con alérgenos (datos de demostración)" data-ia="altMenu"><figcaption data-i="capM">Carta QR</figcaption></figure>
+  <figure><img src="assets/img/booking.webp" width="390" height="1555" loading="lazy" alt="Reserva online con consentimiento explícito para notas de alergia (datos de demostración)" data-ia="altBook"><figcaption data-i="capB">Reservas online</figcaption></figure>
+  <figure class="wide"><img src="assets/img/customise.webp" width="1600" height="1000" loading="lazy" alt="Personalización de la carta QR: temas visuales y vista previa (datos de demostración)" data-ia="altLook"><figcaption data-i="capL">Personalización de la carta y las reservas</figcaption></figure>
+  <figure class="wide"><img src="assets/img/allergens.webp" width="1280" height="513" loading="lazy" alt="Ficha de alérgenos imprimible (datos de demostración)" data-ia="altAll"><figcaption data-i="capA">Ficha de alérgenos</figcaption></figure>
  </div>
 </section>
 
 <section id="cumplimiento" class="wrap sec">
- <h2 data-i="rH">Pensado para cumplir</h2>
+ <h2 data-i="rH">Pensado para el cumplimiento</h2>
  <ul class="grid three">
-  <li><h3 data-i="r1t">RGPD</h3><p data-i="r1">Los datos de reservas se usan solo para gestionar la reserva y se pueden borrar automáticamente pasado un plazo.</p></li>
+  <li><h3 data-i="r1t">RGPD</h3><p data-i="r1">Los datos de una reserva se usan solo para gestionarla y se pueden borrar automáticamente pasado un plazo. Las notas de alergia se tratan como datos de salud: hace falta un consentimiento explícito, desmarcado por defecto, y un enlace al aviso de privacidad.</p></li>
   <li><h3 data-i="r2t">Sin cookies de seguimiento</h3><p data-i="r2">Ni ARKHA ni esta web usan cookies de seguimiento ni scripts de terceros.</p></li>
   <li><h3 data-i="r3t">Alérgenos</h3><p data-i="r3">Información de alérgenos por plato en la carta y en una ficha imprimible, según el Reglamento (UE) 1169/2011.</p></li>
  </ul>
@@ -90,8 +103,8 @@
 <section id="contacto" class="wrap sec contact">
  <h2 data-i="kH">Pide una demo</h2>
  <p data-i="k1">Cuéntanos cómo es tu restaurante y te enseñamos ARKHA funcionando.</p>
- <!-- TODO: confirmar dirección de correo (aún no configurada) -->
  <p><a class="btn" href="mailto:holaarkha@gmail.com?subject=Demo%20ARKHA%20POS">holaarkha@gmail.com</a></p>
+ <p class="plans" data-i="plans">Planes, pronto.</p>
 </section>
 </main>
 <footer class="foot">
